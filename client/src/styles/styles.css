@@ -1,0 +1,168 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #e8d8c3;
+    color: #4e3b31;
+  }
+  
+  /* Header styles */
+  .header {
+    background-color: #e8d8c3;
+    color: #4e3b31;
+    padding: 15px 30px;
+    margin:10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:2px solid #4e3b31 ;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li:hover {
+    color: #9e7c66;
+  }
+  
+  /* Main container */
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .main-container {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+  
+  .image-container {
+    display: none;
+  }
+  
+  @media (min-width: 768px) {
+    .image-container {
+      display: block;
+    }
+  }
+  
+  .shopping-cart-image {
+    width: 400px;
+    height: auto;
+  }
+  
+  /* Form container */
+  .form-container {
+    
+    padding: 30px;
+    border-radius: 8px;
+   
+    text-align: center;
+  }
+  
+  .form-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .form-subtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .form {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    background-color: #e8d8c3;
+    margin-bottom: 15px;
+    border: none; /* Removes the default border */
+    border-bottom: 2px solid #4e3b31; /* Adds a border at the bottom */
+    outline: none; /* Removes focus outline */
+    border-radius: 0; /* Ensures no rounded corners */
+    font-size: 14px;
+  }
+  
+  
+  .form-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4e3b31;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: background-color 0.3s;
+  }
+  
+  .form-button:hover {
+    background-color: #9e7c66;
+  }
+  
+  .google-button {
+    width: 100%;
+    padding: 10px;
+    color: #ffffff;
+   
+   
+    background-color:#4e3b31;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .google-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .login-text {
+    font-size: 14px;
+  }
+  
+  .login-link {
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .login-link:hover {
+    color: #9e7c66;
+  }
+  

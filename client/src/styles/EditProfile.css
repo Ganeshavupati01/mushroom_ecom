@@ -1,0 +1,132 @@
+/* Main Wrapper */
+.mainWrapper {
+  background-color: #e8d8c3;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  padding: 80px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  margin-right: 100px;
+}
+
+.sectionTitle {
+  margin-bottom: 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.menuItem {
+  color: #757575;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 16px;
+  cursor: pointer;
+  padding-left: 16px;
+  font-size: 14px;
+}
+
+.activeMenuItem {
+  color: #db4444;
+  font-weight: 500;
+}
+
+/* Profile Container */
+.profileContainer {
+  background-color: #ffffff;
+  padding: 24px 40px;
+  width: 700px;
+  border-radius: 4px;
+  height: fit-content;
+}
+
+/* Title */
+.title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #db4444;
+  margin-bottom: 24px;
+}
+
+/* Form */
+.formGroup {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 40px;
+}
+
+.inputGroup {
+  flex: 1;
+}
+
+/* Labels and Inputs */
+.label {
+  font-weight: 500;
+  font-size: 14px;
+  color: #333333;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #e8e8e8;
+  background: transparent;
+  font-size: 14px;
+  color: #333;
+  padding: 6px 0;
+  outline: none;
+}
+
+/* Password Section */
+.passwordSection {
+  margin-top: 24px;
+}
+
+.passwordTitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 16px;
+}
+
+/* Buttons */
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+  gap: 32px;
+  align-items: center;
+}
+
+.cancelButton {
+  color: #757575;
+  font-weight: 400;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.saveButton {
+  background-color: #4b3222;
+  color: #ffffff;
+  border: none;
+  padding: 12px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}

@@ -1,0 +1,27 @@
+.timer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .time-unit {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .time-value {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .time-label {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .separator {
+    font-size: 24px;
+    color: #000;
+  }

@@ -1,0 +1,24 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+.home {
+  min-height: 100vh;
+  background-color: #e8d8c3;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Ensure padding doesn't break layout */
+@media (max-width: 768px) {
+  .home {
+    padding: 8px;
+  }
+}

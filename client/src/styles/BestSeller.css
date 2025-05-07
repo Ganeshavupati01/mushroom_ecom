@@ -1,0 +1,24 @@
+.best-seller {
+  margin: 16px;
+}
+
+.best-title {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.best-items {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+  .best-seller {
+    margin: 8px;
+  }
+
+  .best-title {
+    font-size: 1rem;
+  }
+}

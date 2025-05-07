@@ -1,0 +1,132 @@
+.flash-sales {
+  background: #e8d8c3;
+  padding: 32px;
+  margin: 0 auto; /* Centers the container */
+  max-width: 1200px; /* Set a max width */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center all content inside */
+  text-align: center;
+}
+
+.flash-sales-header {
+  display: flex;
+  justify-content: space-between; /* Keeps space between title/container and navigation buttons */
+  align-items: center; /* Vertically aligns the elements */
+  margin-bottom: 32px;
+  width: 100%; /* Ensures the header takes full width */
+  max-width: 1200px; /* Ensures the header stays within the max width */
+  margin-left: auto; /* Moves the header to the right */
+  margin-right: auto; /* Centers the header horizontally */
+  padding-left: 15px;
+  gap: 20px; /* Optional: adjust left padding to shift content towards the right */
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-right: auto;
+}
+
+.today-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.indicator-bar {
+  width: 17px;
+  height: 40px;
+  background: #db4444;
+  border-radius: 4px;
+}
+
+.today-text {
+  color: #db4444;
+  font-size: 19px;
+}
+
+.section-title {
+  font-size: 37px;
+  font-weight: bold;
+}
+
+.navigation-buttons {
+  display: flex;
+  gap: 8px;
+}
+.timer {
+}
+
+.nav-button {
+  background: white;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-button:hover {
+  background: #f5f5f5;
+}
+
+.items-container {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  padding-bottom: 16px;
+  padding-right: 172px;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  scrollbar-width: none;
+  margin: 0 auto; /* Centers the entire container */
+  max-width: 100%; /* Ensures it doesn't overflow */
+}
+
+.items-container::-webkit-scrollbar {
+  display: none;
+}
+
+.items-container::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+.items-container::-webkit-scrollbar-track {
+  display: none;
+}
+
+.item {
+  /* Prevent shrinking and set width to 280px */
+  width: 238px;
+  height: 210px;
+  flex-shrink: 0;
+}
+
+/* Media query for phone-sized screens */
+@media (max-width: 768px) {
+  /* Stack the elements vertically in order: Today, Flash Sales, and Timer */
+  .flash-sales-header {
+    flex-direction: column; /* Stack the header items vertically */
+    align-items: flex-start; /* Align items to the left */
+  }
+
+  .today-indicator {
+    flex-direction: row; /* Ensure indicator bar and text stay on one line */
+    margin-bottom: 8px; /* Add space between today indicator and flash sales title */
+  }
+
+  .title-container {
+    margin-top: 16px; /* Add spacing between Flash Sales and Timer */
+  }
+
+  /* Optional: Adjust the Flash Sales Title spacing */
+  .section-title {
+    margin-top: 16px; /* Adjust the gap between section title and the items below */
+  }
+  .navigation-buttons .nav-button {
+    pointer-events: none; /* Disable interaction */
+    opacity: 0; /* Optional: reduce opacity to indicate disabled state */
+  }
+}
