@@ -98,7 +98,7 @@ const ShoppingCart = () => {
           alert("Order saved and cart cleared successfully.");
 
           // ✅ Use userData.email from database instead of hardcoded value
-          const res = await axios.post("http://localhost:3000/send-message", {
+          const res = await axios.post("https://mushroom-ecom-dt44.vercel.app/api/send-message",  {
             userName: user?.displayName || userData.name || "LexicaAR User",
             userEmail: userData.email || user?.email,
             userPhone: userData.phone || "6300648016",
