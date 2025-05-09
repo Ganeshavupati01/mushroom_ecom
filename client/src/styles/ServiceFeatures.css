@@ -2,29 +2,26 @@
   width: 100%;
   background-color: #e9dcc5;
   padding: 4rem 0;
+  display: flex;
+  justify-content: center;
 }
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
   padding: 0 1rem;
 }
 
 .features-grid {
-  display: grid;
-  gap: 2rem;
-  text-align: center;
-  
-  /* Mobile (default) */
-  grid-template-columns: 1fr;
-
-  /* Desktop */
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
 }
 
 .feature-item {
+  flex: 1 1 300px;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,9 +53,11 @@
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .feature-description {
   color: #555;
   font-size: 1rem;
+  text-align: center;
 }
