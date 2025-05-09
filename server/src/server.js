@@ -11,7 +11,10 @@ const port = process.env.PORT || 3000;
 // Middleware
 app.use(bodyParser.json());
 app.use(cors({
-    origin: process.env.CLIENT_URL || "http://localhost:3001",
+    origin: [
+        process.env.CLIENT_URL || "http://localhost:3001",
+        "https://mushroom-ecom.vercel.app"
+    ],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true
 }));
@@ -87,12 +90,13 @@ app.post("/api/send-message", async (req, res) => {
     }
 });
 
-// Error Handling
-app.use((req, res) => {
-    res.status(404).send({ success: false, message: "Route not found" });
-});
+// Handle Serverless Function Requirements
+// This ensures the function doesn't timeout for Vercel
+module.exports = app;
 
-// Start Server
-app.listen(port, () => {
-    console.log(`🚀 Server running at http://localhost:${port}`);
-});
+// Only start the server if running directly (not when imported by Vercel)
+if (require.main === module) {
+    app.listen(port, () => {
+        console.log(`🚀 Server running at http://localhost:${port}`);
+    });
+}
