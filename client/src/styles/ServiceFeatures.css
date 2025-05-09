@@ -17,11 +17,13 @@
   flex-wrap: wrap;
   gap: 3rem;
   justify-content: center;
+  align-items: center;
 }
 
 .feature-item {
-  flex: 1 1 300px;
-  max-width: 300px;
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
